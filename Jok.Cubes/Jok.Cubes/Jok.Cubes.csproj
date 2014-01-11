@@ -107,9 +107,7 @@
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -124,6 +122,12 @@
     <Content Include="Content\V1\Jok.Cubes.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\chat_bg.png" />
+    <Content Include="Images\king.png" />
+    <Content Include="Images\matrix.png" />
+    <Content Include="Images\officer.png" />
+    <Content Include="Images\Queen.png" />
+    <Content Include="Images\star.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
