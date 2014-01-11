@@ -1,0 +1,184 @@
+﻿.jok_cube {
+    font-family: Tahoma, Helvetica, Arial;
+    height: 40px;
+    display: inline-block;
+    cursor: default;
+    transition: transform ease-in-out 0.1s;
+    -webkit-transition: -webkit-transform ease-in-out 0.1s;
+    padding: 7px 16px;
+    text-align: center;
+    min-width: 31px;
+    border-radius: 3px;
+    font-size: 30px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.jok_cube.enabled {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.enabled:hover {
+    transform: translateY(-5px);
+    -ms-transform: translateY(-5px); /* IE 9 */
+    -webkit-transform: translateY(-5px);
+}
+
+
+.cube_color {
+    color: white;
+}
+
+.cube_color._0,
+.jok_cube.color_0 {
+    background-color: #1166e8;
+}
+
+.cube_color._1,
+.jok_cube.color_1 {
+    background-color: #ff8613;
+}
+
+.cube_color._2,
+.jok_cube.color_2 {
+    background-color: #00922e;
+}
+
+.cube_color._3,
+.jok_cube.color_3 {
+    background-color: #d23d29;
+}
+
+
+.cube_color.span_container {
+    border: aliceblue;
+    padding: 3px 14px;
+    color: rgba(255, 255, 255, 0.81);
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.cube_color._4,
+.jok_cube.color_4 {
+    background-color: white;
+    color: black;
+}
+
+.jok_cube.color_4 {
+    box-shadow: rgba(0, 128, 0, 0.368627) 0px 0px 35px inset;
+    color: transparent;
+    background-image: url('/Images/matrix.png');
+    background-size: 33px;
+    background-position: 50% 40%;
+    background-repeat: no-repeat no-repeat;
+}
+
+.jok_cube.color_4::after {
+    content: 'M';
+}
+
+.cube_color._unknown,
+.jok_cube._unknown {
+    background: silver url('/Images/chat_bg.png');
+    color: black;
+}
+
+.jok_cube .title {
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    font-size: 10px;
+    position: absolute;
+    font-family: Helvetica, Arial;
+    opacity: 0.6;
+}
+
+.jok_cube.color_4 .title {
+    opacity: 0.8;
+    color: green;
+}
+
+.jok_cube.color_4.v2 {
+    box-shadow: rgba(128, 0, 0, 0.22) 0px 0px 35px inset;
+}
+
+.jok_cube.color_4.v2 .title {
+    opacity: 0.8;
+    color: #d23d29;
+}
+
+.jok_cube.dominated_color {
+    border: 2px dashed rgba(255, 255, 255, 0.498039);
+    padding: 5px 14px;
+}
+
+
+
+.minimize_cubes .jok_cube {
+    border-width: 1px;
+    font-size: 27px;
+    padding: 2px 8px;
+    min-width: 33px;
+}
+
+.minimize_cubes .jok_cube.dominated_color {
+    padding: 2px 7px;
+}
+
+
+.jok_cube.level_6::after {
+    content: '6';
+}
+
+.jok_cube.level_7::after {
+    content: '7';
+}
+
+.jok_cube.level_8::after {
+    content: '8';
+}
+
+.jok_cube.level_9::after {
+    content: '9';
+}
+
+.jok_cube.level_10::after {
+    content: '10';
+}
+
+.jok_cube.level_b::after {
+    color: transparent;
+    background-image: url('/Images/officer.png');
+    background-size: 30px;
+    background-position: 50% 40%;
+    background-repeat: no-repeat no-repeat;
+    content: '12';
+}
+
+.jok_cube.level_q::after {
+    content: '12';
+    color: transparent;
+    background-image: url('/Images/queen.png');
+    background-size: 30px;
+    background-position: 50% 40%;
+    background-repeat: no-repeat no-repeat;
+}
+
+.jok_cube.level_k::after {
+    background-position: 50% 40%;
+    color: transparent;
+    background-image: url('/Images/king.png');
+    background-size: 30px;
+    background-repeat: no-repeat no-repeat;
+    content: '12';
+}
+
+.jok_cube.level_s::after {
+    color: transparent;
+    background-image: url('/Images/star.png');
+    background-size: 30px;
+    background-position: 50% 40%;
+    background-repeat: no-repeat no-repeat;
+    content: '12';
+}

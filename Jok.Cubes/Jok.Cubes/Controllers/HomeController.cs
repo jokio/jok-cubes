@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Optimization;
 
 namespace Jok.Cubes.Controllers
 {
@@ -10,21 +11,14 @@ namespace Jok.Cubes.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
+            return Json(new
+            {
+                Name = "Jok Cubes",
+                Description = "Objects for creating games",
+                Repository = "https://github.com/jokio/jok-cubes.git",
+                CSS = Request.Url.ToString() + "css/v1"
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            }, JsonRequestBehavior.AllowGet);
         }
     }
 }
