@@ -1,7 +1,7 @@
 Jok Cubes
 =========
 
-Inovation - cubes are used to play many fun  games with your friends
+Innovation - cubes are used to play many fun  games with your friends
 
 
 
