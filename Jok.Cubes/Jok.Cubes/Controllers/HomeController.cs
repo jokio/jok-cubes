@@ -14,7 +14,7 @@ namespace Jok.Cubes.Controllers
             return Json(new
             {
                 Name = "Jok Cubes",
-                Description = "Objects for creating games",
+                Description = "Cubes are objects with two dimmension properties: colors (4 color) and levels (9 level)",
                 Repository = "https://github.com/jokio/jok-cubes.git",
                 CSS = Request.Url.ToString() + "css/v1"
 
